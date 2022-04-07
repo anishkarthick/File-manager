@@ -1,0 +1,107 @@
+.rrr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+.brdr {
+  border-style: solid;
+  border: none;
+  color: white;
+  background-color: #00539cff;
+  border-left: 8px solid #00539cff;
+  height: 50px;
+  line-height: 50px;
+}
+
+.button {
+  border-radius: 8px;
+  border: none;
+  color: white;
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.green {
+  background-color: #4caf50;
+}
+.red {
+  background-color: #ee3131;
+}
+.space {
+  width: 16px;
+  height: auto;
+  display: inline-block;
+}
+
+fieldset {
+  border: 2px solid grey;
+  border-radius: 3px;
+  padding: 20px;
+}
+legend {
+  width: auto !important;
+}
+
+/*___________________________update modal______________________________*/
+
+.show-modal {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.75rem 3.5rem;
+  margin: 5rem 2rem;
+  border: none;
+  background-color: #fff;
+  color: #444;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/*______________________ CLASSES TO MAKE MODAL WORK _______________________*/
+.hidden {
+  display: none;
+}
+
+.updateModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+
+  background-color: rgb(243, 242, 248);
+  padding: 6rem;
+  border-radius: 5px;
+  font-size: 0.5rem;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
